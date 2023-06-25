@@ -7,6 +7,15 @@ import Cookies from "js-cookie";
 import { useEffect } from "react";
 import {useNavigate} from "react-router-dom";
 import UserReg from "./pages/authentication/userReg";
+import Paytax from "./pages/userOptions/paytax";
+import ViewGovernmentSchemes from "./pages/userOptions/viewGovSchemes";
+import ViewPendingTransactions from "./pages/userOptions/viewPendingTrans";
+import ViewTax from "./pages/userOptions/viewTax";
+import ManageTaxes from "./pages/adminOptions/manageTaxes";
+import Page2 from "./pages/adminOptions/page2";
+import UserTransactionHistory from "./pages/adminOptions/userTransactionHistory";
+import GovernmentSchemes from "./pages/adminOptions/govSchemes";
+import AddUserTransaction from "./pages/adminOptions/addUserTransaction";
 function App() {
   const navigate = useNavigate();
   useEffect(() => {
@@ -39,6 +48,15 @@ function App() {
       <Route exact path="/login/admin" element={<Admin/>}/>
       <Route exact path="/login/user" element={<User/>}/>
       <Route exact path="/register/user" element={<UserReg/>}/>
+      <Route exact path="/user/paytax" element={<Paytax/>}/>
+      <Route exact path="/user/viewgovschemes" element={<ViewGovernmentSchemes/>}/>
+      <Route exact path="/user/viewpendingtransactions" element={<ViewPendingTransactions/>}/>
+      <Route exact path="/user/viewtax" element={<ViewTax/>}/>
+      <Route exact path="/admin/managetaxes" element={<ManageTaxes/>}/>
+      <Route exact path="/admin/managetaxes/page2" element={<Page2/>}/>
+      <Route exact path="/admin/usertransactionhistory" element={<UserTransactionHistory/>}/>
+      <Route exact path="/admin/governmentschemes" element={<GovernmentSchemes/>}/>
+      <Route exact path="/admin/addusertransaction" element={<AddUserTransaction/>}/>
     </Routes>
   );
 }
