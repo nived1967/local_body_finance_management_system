@@ -24,6 +24,14 @@ const AdminHome = () => {
           <h2 className="text-xl font-bold mb-2">Manage Taxes</h2>
           <p className="text-gray-600">Manage and update tax information</p>
         </div>
+        <div className="bg-white shadow-xl p-6 rounded-lg cursor-pointer hover:shadow-2xl transform transition duration-300 hover:scale-105" onClick={() => navigate("/admin/addfine")}>
+          <h2 className="text-xl font-bold mb-2">Add Fine</h2>
+          <p className="text-gray-600">Manage and update fine information</p>
+        </div>
+        <div className="bg-white shadow-xl p-6 rounded-lg cursor-pointer hover:shadow-2xl transform transition duration-300 hover:scale-105" onClick={() => navigate("/admin/viewfine")}>
+          <h2 className="text-xl font-bold mb-2">View Fine</h2>
+          <p className="text-gray-600">View fine information</p>
+        </div>
       </div>
     </div>
   );

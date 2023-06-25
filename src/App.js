@@ -16,6 +16,9 @@ import Page2 from "./pages/adminOptions/page2";
 import UserTransactionHistory from "./pages/adminOptions/userTransactionHistory";
 import GovernmentSchemes from "./pages/adminOptions/govSchemes";
 import AddUserTransaction from "./pages/adminOptions/addUserTransaction";
+import AddFine from "./pages/adminOptions/addfine";
+import ViewFine from "./pages/adminOptions/viewfine";
+import Payfine from "./pages/userOptions/payfine";
 function App() {
   const navigate = useNavigate();
   useEffect(() => {
@@ -57,6 +60,9 @@ function App() {
       <Route exact path="/admin/usertransactionhistory" element={<UserTransactionHistory/>}/>
       <Route exact path="/admin/governmentschemes" element={<GovernmentSchemes/>}/>
       <Route exact path="/admin/addusertransaction" element={<AddUserTransaction/>}/>
+      <Route exact path="/admin/addfine" element={<AddFine/>}/>
+      <Route exact path="/admin/viewfine" element={<ViewFine/>}/>
+      <Route exact path="/user/payfine" element={<Payfine/>}/>
     </Routes>
   );
 }

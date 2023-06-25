@@ -24,6 +24,10 @@ const UserHome = () => {
           <h2 className="text-xl font-bold mb-2">Pay Tax</h2>
           <p className="text-gray-600">Pay your taxes securely and conveniently</p>
         </div>
+        <div className="bg-white shadow-xl p-6 rounded-lg cursor-pointer hover:shadow-2xl transform transition duration-300 hover:scale-105" onClick={() => navigate("/user/payfine")}>
+          <h2 className="text-xl font-bold mb-2">Pay Fine</h2>
+          <p className="text-gray-600">Pay your fine</p>
+        </div>
       </div>
     </div>
   );
